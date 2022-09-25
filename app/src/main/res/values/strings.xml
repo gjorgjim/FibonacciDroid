@@ -1,3 +1,20 @@
 <resources>
-  <string name="app_name">FibonaciDroid</string>
+  <string name="app_name">FibonacciDroid</string>
+
+  <string name="username">Username</string>
+  <string name="password">Password</string>
+  <string name="email">Email</string>
+  <string name="repeatPassword">Repeat password</string>
+  <string name="sign_in">Sign in</string>
+  <string name="sign_up">Sign up</string>
+  <string name="no_account">"Don't have an account? Sign up!</string>
+  <string name="already_have_account">Already have an account? Sign in!</string>
+  <string name="enter_credentials">Enter account info</string>
+  <string name="empty_history">Your history is empty!\nWhen you request a new fibonacci sequence, it will appear here.</string>
+  <string name="history">History</string>
+  <string name="request">Request sequence</string>
+  <string name="calculate_new">Calculate new Fibonacci sequence</string>
+  <string name="fibonacci_number">Fibonacci number</string>
+  <string name="calculate">Calculate</string>
+  <string name="result">Result</string>
 </resources>

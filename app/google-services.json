@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552856858605",
+    "project_id": "fibonaccidroid",
+    "storage_bucket": "fibonaccidroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552856858605:android:c32d47e0ad34dade2a01e4",
+        "android_client_info": {
+          "package_name": "com.iamgjm.fibonacidroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552856858605-jdhct8ebo1rg8eir1v8pqv85q4sqt4rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA38KCMMMJiOwuZCjmoKmQUaIH2YU-jv1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552856858605-jdhct8ebo1rg8eir1v8pqv85q4sqt4rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

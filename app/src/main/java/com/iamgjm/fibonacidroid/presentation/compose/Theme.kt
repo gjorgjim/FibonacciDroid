@@ -1,5 +1,6 @@
 package com.iamgjm.fibonacidroid.presentation.compose
 
+import android.widget.Toolbar
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.Colors
 import androidx.compose.material.MaterialTheme
@@ -11,19 +12,23 @@ import androidx.compose.ui.graphics.Color
 private val DarkColorPalette = FibonacciColors(
     materialColors = darkColors(
         primary = primary,
-        secondary = secondary
+        secondary = secondary,
+        surface = darkBackground
     ),
     primaryText = darkPrimaryText,
-    secondaryText = secondaryText
+    secondaryText = secondaryText,
+    toolbar = darkToolbar
 )
 
 private val LightColorPalette = FibonacciColors(
     materialColors = lightColors(
         primary = primary,
-        secondary = secondary
+        secondary = secondary,
+        surface = lightBackground
     ),
     primaryText = lightPrimaryText,
-    secondaryText = secondaryText
+    secondaryText = secondaryText,
+    toolbar = lightToolbar
 )
 
 @Composable
@@ -39,6 +44,7 @@ fun FibonacciTheme(
     ProvideFibonacciColors(colors) {
         MaterialTheme(
             colors = colors.material,
+            typography = FibonacciTypography,
             content = content
         )
     }
@@ -53,7 +59,8 @@ object FibonacciTheme {
 class FibonacciColors(
     materialColors: Colors,
     primaryText: Color,
-    secondaryText: Color
+    secondaryText: Color,
+    toolbar: Color
 ) {
     var material = materialColors
         private set
@@ -65,10 +72,14 @@ class FibonacciColors(
     var secondaryText by mutableStateOf(secondaryText)
         private set
 
+    var toolbar by mutableStateOf(toolbar)
+        private set
+
     fun update(other: FibonacciColors) {
         material = other.material
         primaryText = other.primaryText
         secondaryText = other.secondaryText
+        toolbar = other.toolbar
     }
 }
 

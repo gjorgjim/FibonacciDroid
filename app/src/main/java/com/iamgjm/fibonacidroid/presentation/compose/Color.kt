@@ -8,9 +8,11 @@ val secondary = Color(0xffff5722)
 val secondaryText = Color(0xff757575)
 
 //light
-//val lightBackground = Color(0xffffffff)
+val lightBackground = Color(0xffffffff)
 val lightPrimaryText = Color(0xff212121)
+val lightToolbar = Color(0xffC8E6C9)
 
 //dark
-//val darkBackground = Color(0xff004d00)
+val darkBackground = Color(0xff001d00)
 val darkPrimaryText = Color(0xfffafafa)
+val darkToolbar = Color(0xff1B2E20)

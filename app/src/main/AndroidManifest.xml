@@ -11,7 +11,8 @@
     android:theme="@style/Theme.FibonaciDroid">
     <activity
       android:name=".presentation.FibonacciActivity"
-      android:exported="true">
+      android:exported="true"
+      android:windowSoftInputMode="adjustPan">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
