@@ -8,7 +8,7 @@ import com.iamgjm.fibonacidroid.base.presentation.BaseViewModel
 import com.iamgjm.fibonacidroid.history.domain.History
 import com.iamgjm.fibonacidroid.history.fibonacciitem.presentation.FibonacciItemData
 import com.iamgjm.fibonacidroid.presentation.IShared
-import com.iamgjm.fibonacidroid.presentation.NavigationEvent
+import com.iamgjm.fibonacidroid.domain.NavigationEvent
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 

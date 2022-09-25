@@ -7,7 +7,7 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.lifecycle.viewModelScope
 import com.iamgjm.fibonacidroid.base.presentation.BaseViewModel
 import com.iamgjm.fibonacidroid.presentation.IShared
-import com.iamgjm.fibonacidroid.presentation.NavigationEvent
+import com.iamgjm.fibonacidroid.domain.NavigationEvent
 import com.iamgjm.fibonacidroid.request.domain.FibonacciSequence
 import com.iamgjm.fibonacidroid.request.domain.NumberValidator
 import kotlinx.coroutines.flow.launchIn

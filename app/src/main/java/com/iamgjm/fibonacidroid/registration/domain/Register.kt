@@ -7,7 +7,7 @@ import com.iamgjm.fibonacidroid.base.mapSuspended
 import com.iamgjm.fibonacidroid.base.runFirebaseOperation
 import com.iamgjm.fibonacidroid.base.technicalError
 import com.iamgjm.fibonacidroid.data.firebase.FirebaseServices
-import com.iamgjm.fibonacidroid.presentation.NavigationEvent
+import com.iamgjm.fibonacidroid.domain.NavigationEvent
 import com.iamgjm.fibonacidroid.registration.data.User
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.tasks.await

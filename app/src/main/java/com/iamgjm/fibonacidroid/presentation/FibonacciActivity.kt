@@ -8,6 +8,7 @@ import com.iamgjm.fibonacidroid.base.noConstructorViewModel
 import com.iamgjm.fibonacidroid.base.presentation.BaseFragment
 import com.iamgjm.fibonacidroid.base.toFragment
 import com.iamgjm.fibonacidroid.domain.Authentication
+import com.iamgjm.fibonacidroid.domain.NavigationEvent
 import com.iamgjm.fibonacidroid.login.presentation.LoginFragment
 import com.iamgjm.fibonacidroid.registration.presentation.RegistrationFragment
 import com.iamgjm.fibonacidroid.request.presentation.RequestFragment

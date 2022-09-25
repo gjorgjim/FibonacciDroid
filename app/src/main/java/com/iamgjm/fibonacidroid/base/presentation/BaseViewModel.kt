@@ -3,7 +3,7 @@ package com.iamgjm.fibonacidroid.base.presentation
 import androidx.lifecycle.ViewModel
 import com.iamgjm.fibonacidroid.base.domain.Logout
 import com.iamgjm.fibonacidroid.presentation.IShared
-import com.iamgjm.fibonacidroid.presentation.NavigationEvent
+import com.iamgjm.fibonacidroid.domain.NavigationEvent
 
 open class BaseViewModel(
     private val sharedViewModel: IShared

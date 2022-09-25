@@ -1,4 +1,4 @@
-package com.iamgjm.fibonacidroid.presentation
+package com.iamgjm.fibonacidroid.domain
 
 sealed class NavigationEvent {
     object Login : NavigationEvent()

@@ -9,7 +9,7 @@ import com.iamgjm.fibonacidroid.base.presentation.BaseViewModel
 import com.iamgjm.fibonacidroid.login.domain.LoginFormValidation
 import com.iamgjm.fibonacidroid.login.domain.SignIn
 import com.iamgjm.fibonacidroid.presentation.IShared
-import com.iamgjm.fibonacidroid.presentation.NavigationEvent
+import com.iamgjm.fibonacidroid.domain.NavigationEvent
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 
