@@ -19,7 +19,7 @@ I think this architecture alongside with Single Responsibility principle, provid
 readable code where each class(use case, view model) executes one part of the logic and can be
 easily tested in isolation.
 
-This is a vertical architecture where the lower packages don't know about the packages above them.
+This is a vertical slice architecture where the lower packages don't know about the packages above them.
 For this to be true, the domain package doesn't have imports from the presentation package.
 The data package doesn't have import from the domain package.
 
