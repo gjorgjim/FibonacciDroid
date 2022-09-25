@@ -7,7 +7,6 @@ import com.iamgjm.fibonacidroid.base.runFirebaseOperation
 import com.iamgjm.fibonacidroid.base.technicalError
 import com.iamgjm.fibonacidroid.data.firebase.FirebaseServices
 import com.iamgjm.fibonacidroid.history.data.HistoryItem
-import com.iamgjm.fibonacidroid.history.fibonacciitem.presentation.FibonacciItemData
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.tasks.await
 import java.text.SimpleDateFormat
@@ -33,9 +32,9 @@ class History {
         }
     }
 
-    private fun mapData(data: DataSnapshot) : List<FibonacciItemData> {
+    private fun mapData(data: DataSnapshot) : List<Pair<List<Int>, String>> {
         val format = SimpleDateFormat("dd/MM/yyy")
-        val result = mutableListOf<FibonacciItemData>()
+        val result = mutableListOf<Pair<List<Int>, String>>()
         if (data.value == null) return result
 
         (data.value as? HashMap<*, *>)?.let { historyMap ->
@@ -46,7 +45,7 @@ class History {
                     date = historyData?.get("date") as? Long ?: -1
                 )
                 result.add(
-                    FibonacciItemData(
+                    Pair(
                         historyItem.sequence.split(",").map { it.toInt() },
                         format.format(Date(historyItem.date))
                     )
@@ -60,6 +59,6 @@ class History {
     data class Result(
         val loading: Boolean = false,
         val error: String? = null,
-        val data: List<FibonacciItemData> = listOf()
+        val data: List<Pair<List<Int>, String>> = listOf()
     )
 }

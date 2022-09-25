@@ -6,6 +6,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.viewModelScope
 import com.iamgjm.fibonacidroid.base.presentation.BaseViewModel
 import com.iamgjm.fibonacidroid.history.domain.History
+import com.iamgjm.fibonacidroid.history.fibonacciitem.presentation.FibonacciItemData
 import com.iamgjm.fibonacidroid.presentation.IShared
 import com.iamgjm.fibonacidroid.presentation.NavigationEvent
 import kotlinx.coroutines.flow.launchIn
@@ -26,7 +27,7 @@ class HistoryViewModel(sharedViewModel: IShared) : BaseViewModel(sharedViewModel
 
     init {
         history().onEach {
-            updateState { copy(loading = it.loading, data = it.data) }
+            updateState { copy(loading = it.loading, data = it.data.map { FibonacciItemData(it.first, it.second) }) }
         }.launchIn(viewModelScope)
     }
 
